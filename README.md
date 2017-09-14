@@ -8,8 +8,10 @@
 
 2、对需要拖动的控件设置draggingType。
 
-支持继承于UIView的所有控件如UIButton、UITableView、ContainerView等。设置拖动时将优先响应拖动，继承于UIScrollView的控件如UITableView，UITextView等将无法滚动，拖动结束可通过设置draggingType=DraggingTypeDisabled来恢复UIScrollView的滚动事件。
+支持继承于UIView的所有控件如UIButton、UITableView、ContainerView等。设置拖动后将优先响应拖动，继承于UIScrollView的控件如UITableView，UITextView等将无法滚动，拖动结束可通过设置draggingType=DraggingTypeDisabled来恢复UIScrollView的滚动事件。
+
 支持autolayout，autosizing。被拖动的控件会自动移除边距约束。
+
 支持代码，也支持interface builder。
 
 可设置类型包括：
