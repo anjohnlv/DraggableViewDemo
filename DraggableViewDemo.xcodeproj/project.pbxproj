@@ -14,6 +14,7 @@
 		82A293E51F5CEC24004D5B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A293E41F5CEC24004D5B64 /* Assets.xcassets */; };
 		82A293E81F5CEC25004D5B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A293E61F5CEC25004D5B64 /* LaunchScreen.storyboard */; };
 		82A293F51F5CEC6C004D5B64 /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A293F41F5CEC6C004D5B64 /* UIView+Draggable.m */; };
+		82EAED6F1F6A0FE60032A633 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EAED6E1F6A0FE60032A633 /* ContainerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		82A293E91F5CEC25004D5B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82A293F31F5CEC6C004D5B64 /* UIView+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Draggable.h"; sourceTree = "<group>"; };
 		82A293F41F5CEC6C004D5B64 /* UIView+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draggable.m"; sourceTree = "<group>"; };
+		82EAED6D1F6A0FE60032A633 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		82EAED6E1F6A0FE60032A633 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				82A293DC1F5CEC24004D5B64 /* AppDelegate.m */,
 				82A293DE1F5CEC24004D5B64 /* ViewController.h */,
 				82A293DF1F5CEC24004D5B64 /* ViewController.m */,
+				82EAED6D1F6A0FE60032A633 /* ContainerViewController.h */,
+				82EAED6E1F6A0FE60032A633 /* ContainerViewController.m */,
 				82A293E11F5CEC24004D5B64 /* Main.storyboard */,
 				82A293E41F5CEC24004D5B64 /* Assets.xcassets */,
 				82A293E61F5CEC25004D5B64 /* LaunchScreen.storyboard */,
@@ -168,6 +173,7 @@
 				82A293F51F5CEC6C004D5B64 /* UIView+Draggable.m in Sources */,
 				82A293DD1F5CEC24004D5B64 /* AppDelegate.m in Sources */,
 				82A293DA1F5CEC24004D5B64 /* main.m in Sources */,
+				82EAED6F1F6A0FE60032A633 /* ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

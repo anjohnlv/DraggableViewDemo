@@ -81,6 +81,13 @@ static const CGFloat kAdsorbDuration = 0.5f;
 #pragma mark - Draggable
 -(void)makeDraggable:(BOOL)draggable {
     [self setUserInteractionEnabled:YES];
+    [self removeConstraints:self.constraints];
+    for (NSLayoutConstraint *constraint in self.superview.constraints) {
+        if ([constraint.firstItem isEqual:self]) {
+            [self.superview removeConstraint:constraint];
+        }
+    }
+    [self setTranslatesAutoresizingMaskIntoConstraints:YES];
     UIPanGestureRecognizer *panGesture = [self panGesture];
     if (draggable) {
         if (!panGesture) {
@@ -266,9 +273,9 @@ static const CGFloat kAdsorbDuration = 0.5f;
         center.y = frame.size.height/2;
     }
     [self sendToView:adsorbingView];
-    [self setCenter:center];
     [UIView animateWithDuration:animated?kAdsorbDuration:0 animations: ^{
         [adsorbingView setFrame:newFrame];
+        [self setCenter:center];
     } completion: nil];
 }
 
