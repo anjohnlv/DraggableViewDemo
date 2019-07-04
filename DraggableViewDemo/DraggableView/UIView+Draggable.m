@@ -218,6 +218,9 @@ static const CGFloat kAdsorbDuration = 0.5f;
     CGPoint origin = self.frame.origin;
     CGSize size = self.frame.size;
     CGSize superSize = self.superview.frame.size;
+    if (CGSizeEqualToSize(superSize, CGSizeZero) ) {
+        superSize =  [UIScreen mainScreen].bounds.size;
+    }
     BOOL adsorbing = NO;
     if (origin.x<kAdsorbScope) {
         origin.x = 0;
